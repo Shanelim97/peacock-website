@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE PEACOCK 日本皮考克 | 始于1950年的真空保温制品专家</title>
+<meta name="description" content="Peacock 日本皮考克：始于1950年的日本高品质真空保温制品专家，提供保温壶、随身杯、户外系列、厨房小家电与 OEM 定制。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { ink:'#16181b', steel:'#a9b0b7', mist:'#eef0f2', pearl:'#fafafa', line:'#d9dde1' },
+    fontFamily: { sans:['"Noto Sans SC"','system-ui','sans-serif'], serif:['"Noto Serif SC"','serif'] }
+  } }
+}
+</script>
+<style>
+  .steel { background: linear-gradient(90deg,#8d949b 0%,#e9ecee 22%,#fff 38%,#b9c0c6 62%,#7c848b 100%); }
+  .tab[aria-selected="true"] { background:#16181b; color:#fff; border-color:#16181b; }
+  :focus-visible { outline:2px solid #16181b; outline-offset:3px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-bottle { animation: rise 1.1s cubic-bezier(.2,.7,.2,1) both; }
+    @keyframes rise { from { opacity:0; transform: translateY(32px); } to { opacity:1; transform:none; } }
+  }
+</style>
+</head>
+<body class="bg-pearl text-ink font-sans antialiased">
+
+<!-- 导航栏 -->
+<header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-line">
+  <nav class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between" aria-label="主导航">
+    <a href="#top" class="font-serif text-xl font-bold tracking-[.2em]">PEACOCK</a>
+    <ul class="hidden md:flex items-center gap-8 text-sm">
+      <li><a class="hover:text-steel transition" href="#products">产品分类</a></li>
+      <li><a class="hover:text-steel transition" href="#about">关于我们</a></li>
+      <li><a class="hover:text-steel transition" href="#oem">OEM定制服务</a></li>
+      <li><a class="bg-ink text-white px-5 py-2 hover:bg-neutral-700 transition" href="#contact">联系我们</a></li>
+    </ul>
+    <button id="menuBtn" class="md:hidden p-2" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </nav>
+  <ul id="mobileMenu" class="hidden md:hidden border-t border-line bg-white px-5 py-3 text-sm">
+    <li><a class="block py-3" href="#products">产品分类</a></li>
+    <li><a class="block py-3" href="#about">关于我们</a></li>
+    <li><a class="block py-3" href="#oem">OEM定制服务</a></li>
+    <li><a class="block py-3" href="#contact">联系我们</a></li>
+  </ul>
+</header>
+
+<main id="top">
+<!-- Hero -->
+<section class="pt-16 bg-ink text-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-steel text-sm tracking-widest mb-6">始于 1950 年</p>
+      <h1 class="font-serif font-bold text-4xl md:text-6xl leading-tight">THE PEACOCK</h1>
+      <p class="mt-6 text-lg md:text-xl text-neutral-300 max-w-md leading-relaxed">始于1950年的日本高品质真空保温制品专家</p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#products" class="bg-white text-ink px-7 py-3 font-medium hover:bg-steel transition">探索产品目录</a>
+        <a href="#oem" class="border border-steel text-white px-7 py-3 font-medium hover:bg-white hover:text-ink transition">企业B2B定制</a>
+      </div>
+    </div>
+    <!-- 双层真空瓶剖面：首屏核心视觉 -->
+    <div class="hero-bottle flex justify-center" aria-hidden="true">
+      <svg viewBox="0 0 240 400" class="w-48 md:w-60 h-auto">
+        <defs>
+          <linearGradient id="sg" x1="0" x2="1"><stop offset="0" stop-color="#7c848b"/><stop offset=".3" stop-color="#f4f5f6"/><stop offset=".5" stop-color="#fff"/><stop offset=".75" stop-color="#b9c0c6"/><stop offset="1" stop-color="#6d747b"/></linearGradient>
+        </defs>
+        <rect x="80" y="10" width="80" height="48" rx="8" fill="#2a2d31" stroke="#a9b0b7"/>
+        <rect x="52" y="58" width="136" height="332" rx="26" fill="url(#sg)"/>
+        <rect x="64" y="70" width="112" height="308" rx="18" fill="none" stroke="#16181b" stroke-opacity=".35" stroke-dasharray="3 5"/>
+        <rect x="74" y="80" width="92" height="288" rx="12" fill="#16181b" fill-opacity=".85"/>
+        <text x="120" y="230" fill="#a9b0b7" font-size="11" text-anchor="middle" font-family="sans-serif">双层真空 · VACUUM</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌故事 -->
+<section id="about" class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-5 gap-12">
+    <div class="md:col-span-2">
+      <h2 class="font-serif font-bold text-3xl md:text-4xl leading-snug">70多年，只专注一件事：保温</h2>
+      <p class="mt-6 text-neutral-600 leading-loose">从1950年起，Peacock 持续打磨真空保温技术，把日本制造对细节的要求带进每一只壶与每一个杯子。</p>
+    </div>
+    <div class="md:col-span-3 grid sm:grid-cols-2 gap-px bg-line border border-line">
+      <div class="bg-white p-8"><h3 class="font-bold mb-2">70+ 年历史</h3><p class="text-sm text-neutral-600 leading-relaxed">自1950年创立，积累了三代人的真空保温制造经验。</p></div>
+      <div class="bg-white p-8"><h3 class="font-bold mb-2">日本精工品质</h3><p class="text-sm text-neutral-600 leading-relaxed">严格的品质检验流程，保证每件产品的保温保冷表现稳定。</p></div>
+      <div class="bg-white p-8"><h3 class="font-bold mb-2">BPA Free 环保材质</h3><p class="text-sm text-neutral-600 leading-relaxed">选用不含 BPA 的安全材质，部分系列采用 SUS316 不锈钢。</p></div>
+      <div class="bg-white p-8"><h3 class="font-bold mb-2">双层真空绝热</h3><p class="text-sm text-neutral-600 leading-relaxed">内外双层之间抽成真空，隔绝热传导，长时间保持冷热。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 产品 -->
+<section id="products" class="py-20 md:py-28 bg-mist">
+  <div class="max-w-7xl mx-auto px-5">
+    <h2 class="font-serif font-bold text-3xl md:text-4xl">产品目录</h2>
+    <p class="mt-4 text-neutral-600">按系列筛选，查看型号、容量与核心特点。</p>
+    <div id="tabs" role="tablist" aria-label="产品系列" class="mt-8 flex flex-wrap gap-2"></div>
+    <p id="count" class="mt-6 text-sm text-neutral-500" aria-live="polite"></p>
+    <div id="grid" class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+  </div>
+</section>
+
+<!-- OEM -->
+<section id="oem" class="py-20 md:py-28 bg-ink text-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <h2 class="font-serif font-bold text-3xl md:text-4xl">OEM &amp; 礼品定制</h2>
+    <p class="mt-4 text-neutral-300 max-w-2xl leading-relaxed">为品牌与企业提供从选型、图案工艺到礼盒包装的一站式定制。</p>
+
+    <h3 class="mt-14 text-sm text-steel">合作品牌</h3>
+    <ul class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-px bg-neutral-700 border border-neutral-700">
+      <li class="bg-ink py-8 text-center font-serif text-xl">Starbucks 星巴克</li>
+      <li class="bg-ink py-8 text-center font-serif text-xl">ZUS Coffee</li>
+      <li class="bg-ink py-8 text-center font-serif text-xl col-span-2 md:col-span-1">丰田轮胎</li>
+    </ul>
+
+    <h3 class="mt-14 text-sm text-steel">定制工艺</h3>
+    <div class="mt-4 grid md:grid-cols-3 gap-5">
+      <article class="border border-neutral-700 p-7">
+        <h4 class="font-bold text-lg">丝网印刷</h4>
+        <p class="mt-3 text-sm text-neutral-300 leading-relaxed">适合标志与多色图案，色彩饱满，适用于活动赠品与品牌联名款。</p>
+      </article>
+      <article class="border border-neutral-700 p-7">
+        <h4 class="font-bold text-lg">激光雕刻</h4>
+        <p class="mt-3 text-sm text-neutral-300 leading-relaxed">直接在不锈钢表面雕刻，细节精准、不易磨损，适合高端商务礼品。</p>
+      </article>
+      <article class="border border-neutral-700 p-7">
+        <h4 class="font-bold text-lg">礼盒包装</h4>
+        <p class="mt-3 text-sm text-neutral-300 leading-relaxed">按品牌调性定制外盒与内托，可搭配套装组合，直接用于送礼。</p>
+      </article>
+    </div>
+    <a href="#contact" class="inline-block mt-12 bg-white text-ink px-7 py-3 font-medium hover:bg-steel transition">咨询定制方案</a>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section id="contact" class="py-20 md:py-24">
+  <div class="max-w-3xl mx-auto px-5 text-center">
+    <h2 class="font-serif font-bold text-3xl md:text-4xl">联系我们</h2>
+    <p class="mt-4 text-neutral-600">告诉我们你的产品需求、数量与交期，我们会尽快回复。</p>
+    <a href="mailto:info@example.com" class="inline-block mt-8 bg-ink text-white px-8 py-3 font-medium hover:bg-neutral-700 transition">info@example.com</a>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-line bg-white">
+  <div class="max-w-7xl mx-auto px-5 py-12 grid md:grid-cols-3 gap-8 text-sm">
+    <div><p class="font-serif text-lg font-bold tracking-[.2em]">PEACOCK</p><p class="mt-3 text-neutral-600">日本高品质真空保温制品专家</p></div>
+    <div><p class="font-bold mb-3">联系邮箱</p><a class="text-neutral-600 hover:text-ink" href="mailto:info@example.com">info@example.com</a></div>
+    <div><p class="font-bold mb-3">官方网站</p>
+      <ul class="space-y-2 text-neutral-600">
+        <li><a class="hover:text-ink" href="#" target="_blank" rel="noopener">日本官网</a></li>
+        <li><a class="hover:text-ink" href="#" target="_blank" rel="noopener">海外官网</a></li>
+      </ul></div>
+  </div>
+  <p class="border-t border-line py-5 text-center text-xs text-neutral-500">© <span id="year"></span> Peacock. All rights reserved.</p>
+</footer>
+
+<script>
+/* ===== 产品数据：以下为示例数据，请按你的 Peacock 产品目录替换 ===== */
+const CATS = [
+  { id:'all',   name:'全部' },
+  { id:'pots',  name:'Pots & Kettles 保温壶' },
+  { id:'togo',  name:'To-Go Bottles 随身杯瓶' },
+  { id:'sport', name:'Sports & Outdoor 户外运动' },
+  { id:'kitchen', name:'Kitchen Appliances 厨房小家电' },
+  { id:'baby',  name:'Baby & Kids 母婴儿童' }
+];
+const PRODUCTS = [
+  { cat:'pots', model:'AHR-100', name:'真空保温壶', cap:'1.0L', tags:['保温','保冷','SUS316'] },
+  { cat:'pots', model:'ABC-150', name:'玻璃内胆保温壶', cap:'1.5L', tags:['玻璃内胆','保温','可拆洗'] },
+  { cat:'pots', model:'ABC-200', name:'大容量家用保温壶', cap:'2.0L', tags:['大容量','保温','保冷'] },
+  { cat:'togo', model:'ATT-035', name:'随身保温杯', cap:'350ml', tags:['SUS316','保温','保冷'] },
+  { cat:'togo', model:'ATT-050', name:'轻量随行杯', cap:'500ml', tags:['轻量','保温','可洗'] },
+  { cat:'togo', model:'ATT-060', name:'直饮真空瓶', cap:'600ml', tags:['直饮','保冷','BPA Free'] },
+  { cat:'sport', model:'ASP-100', name:'运动真空水瓶', cap:'1.0L', tags:['保冷','防漏','可洗'] },
+  { cat:'sport', model:'ASP-150', name:'户外大容量水壶', cap:'1.5L', tags:['户外','大容量','保温'] },
+  { cat:'sport', model:'ASP-200', name:'露营保温壶', cap:'2.0L', tags:['露营','保温','保冷'] },
+  { cat:'kitchen', model:'AKT-300', name:'多功能汤锅', cap:'3.0L', tags:['多功能','可洗','易清洁'] },
+  { cat:'kitchen', model:'AKP-200', name:'电烤盘', cap:'—', tags:['电烤','可拆洗','易清洁'] },
+  { cat:'kitchen', model:'AKS-400', name:'无烟烤炉', cap:'—', tags:['低烟','可拆洗','家用'] },
+  { cat:'baby', model:'ABK-025', name:'儿童吸管杯', cap:'250ml', tags:['BPA Free','保冷','可洗'] },
+  { cat:'baby', model:'ABK-035', name:'儿童直饮保温杯', cap:'350ml', tags:['BPA Free','保温','防漏'] }
+];
+
+const icons = {
+  pots:   '<path d="M14 8h28v6l4 4v28a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V18l4-4z"/><path d="M46 22h6a4 4 0 0 1 0 12h-6"/>',
+  togo:   '<rect x="20" y="4" width="24" height="8" rx="2"/><path d="M18 12h28l-2 44a3 3 0 0 1-3 3H23a3 3 0 0 1-3-3z"/>',
+  sport:  '<rect x="24" y="4" width="16" height="10" rx="2"/><path d="M22 14h20a4 4 0 0 1 4 4v38a3 3 0 0 1-3 3H21a3 3 0 0 1-3-3V18a4 4 0 0 1 4-4z"/><path d="M18 30h28M18 42h28"/>',
+  kitchen:'<path d="M8 28h48v16a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8z"/><path d="M4 28h56M20 20c0-4 4-4 4-8M32 20c0-4 4-4 4-8M44 20c0-4 4-4 4-8"/>',
+  baby:   '<path d="M22 6h20v8H22z"/><path d="M20 14h24l-2 42a3 3 0 0 1-3 3H25a3 3 0 0 1-3-3z"/><circle cx="32" cy="36" r="6"/>'
+};
+const catName = id => CATS.find(c => c.id === id).name;
+const tabsEl = document.getElementById('tabs');
+const gridEl = document.getElementById('grid');
+const countEl = document.getElementById('count');
+
+function render(cat) {
+  const list = cat === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.cat === cat);
+  countEl.textContent = `共 ${list.length} 款产品`;
+  gridEl.innerHTML = list.map(p => `
+    <article class="bg-white border border-line flex flex-col">
+      <div class="steel h-44 flex items-center justify-center">
+        <svg viewBox="0 0 64 64" class="w-20 h-20 text-ink" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">${icons[p.cat]}</svg>
+      </div>
+      <div class="p-5 flex flex-col flex-1">
+        <p class="text-xs text-neutral-500">${catName(p.cat).split(' ')[0]}</p>
+        <h3 class="mt-1 font-bold">${p.name}</h3>
+        <dl class="mt-3 flex gap-6 text-sm">
+          <div><dt class="text-xs text-neutral-500">型号</dt><dd class="font-medium">${p.model}</dd></div>
+          <div><dt class="text-xs text-neutral-500">容量</dt><dd class="font-medium">${p.cap}</dd></div>
+        </dl>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          ${p.tags.map(t => `<li class="text-xs border border-line px-2 py-1 text-neutral-700">${t}</li>`).join('')}
+        </ul>
+      </div>
+    </article>`).join('');
+}
+
+CATS.forEach((c, i) => {
+  const b = document.createElement('button');
+  b.className = 'tab border border-line bg-white px-4 py-2 text-sm hover:border-ink transition';
+  b.role = 'tab';
+  b.textContent = c.name;
+  b.setAttribute('aria-selected', i === 0);
+  b.addEventListener('click', () => {
+    tabsEl.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t === b));
+    render(c.id);
+  });
+  tabsEl.appendChild(b);
+});
+render('all');
+
+/* 移动端菜单 */
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('hidden') === false;
+  menuBtn.setAttribute('aria-expanded', open);
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
+  menuBtn.setAttribute('aria-expanded', 'false');
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
